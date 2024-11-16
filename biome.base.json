@@ -1,0 +1,100 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+	"files": {
+		"ignoreUnknown": true,
+		"ignore": [
+			"package.json",
+			"pnpm-lock.yaml",
+			"node_modules",
+			"dist",
+			"tsconfig.app.json",
+			"tsconfig.node.json",
+			"tsconfig.json",
+			"biome.json",
+			"biome.base.json",
+			"biome.react.json"
+		]
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2,
+		"indentStyle": "tab",
+		"lineEnding": "lf",
+		"lineWidth": 120
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"semicolons": "always",
+			"quoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"trailingCommas": "all"
+		}
+	},
+	"json": {
+		"formatter": {
+			"enabled": true,
+			"indentWidth": 2,
+			"indentStyle": "tab",
+			"lineEnding": "lf",
+			"lineWidth": 120
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noEmptyTypeParameters": "error",
+				"noExcessiveCognitiveComplexity": "error",
+				"noForEach": "error",
+				"noUselessCatch": "error",
+				"noUselessConstructor": "error",
+				"noUselessEmptyExport": "error",
+				"noUselessSwitchCase": "error",
+				"noVoid": "off",
+				"useArrowFunction": "error",
+				"useLiteralKeys": "off",
+				"useOptionalChain": "error",
+				"useRegexLiterals": "error",
+				"useSimplifiedLogicExpression": "error"
+			},
+			"correctness": {
+				"noConstAssign": "error",
+				"noConstantCondition": "error",
+				"noEmptyCharacterClassInRegex": "error",
+				"noEmptyPattern": "error",
+				"noGlobalObjectCalls": "error",
+				"noInnerDeclarations": "off",
+				"noInvalidConstructorSuper": "error",
+				"noInvalidNewBuiltin": "error",
+				"noSwitchDeclarations": "off"
+			},
+			"style": {
+				"noDefaultExport": "error",
+				"noVar": "error",
+				"noUselessElse": "error",
+				"noNonNullAssertion": "off",
+				"useAsConstAssertion": "warn",
+				"useConst": "error",
+				"useNodejsImportProtocol": "error",
+				"useShorthandArrayType": "error",
+				"useSingleVarDeclarator": "error"
+			},
+			"suspicious": {
+				"noApproximativeNumericConstant": "error",
+				"noCatchAssign": "error",
+				"noConfusingVoidType": "error",
+				"noDoubleEquals": "error",
+				"noDuplicateCase": "error",
+				"noDuplicateObjectKeys": "error",
+				"noDuplicateParameters": "error",
+				"noEmptyBlockStatements": "error",
+				"noEmptyInterface": "error",
+				"noExplicitAny": "error"
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+	"javascript": {
+		"jsxRuntime": "transparent"
+	},
+	"css": {
+		"formatter": {
+			"enabled": true,
+			"indentWidth": 2,
+			"indentStyle": "tab",
+			"lineEnding": "lf",
+			"lineWidth": 120
+		}
+	},
+	"linter": {
+		"rules": {
+			"a11y": {
+				"all": true
+			},
+			"nursery": {
+				"useSortedClasses": "error"
+			},
+			"correctness": {
+				"noUnknownFunction": "error",
+				"noUnknownUnit": "error"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "error",
+				"noDangerouslySetInnerHtmlWithChildren": "error"
+			},
+			"style": {
+				"noImplicitBoolean": "error",
+				"useFragmentSyntax": "error",
+				"noDefaultExport": "off"
+			},
+			"suspicious": {
+				"noSuspiciousSemicolonInJsx": "error"
+			}
+		}
+	}
+}
